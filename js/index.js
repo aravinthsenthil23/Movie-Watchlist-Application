@@ -1,3 +1,11 @@
+if('serviceWorker' in navigator){
+    window.addEventListener('load', () => {
+        navigator.serviceWorker.register('sw.js')
+            .then(reg => console.log('Service worker active'))
+            .catch(err => console.log('Registration failed', err))
+    });
+}
+
 let movies_container = document.getElementById("movies-container")
 let movies_lists = JSON.parse(localStorage.getItem('myWatchList')) || []
 let index = 0;
