@@ -17,7 +17,7 @@ document.getElementById("search-btn").addEventListener("click", async () => {
 })
 
 function unableToFind() {
-    movies_container.style.setProperty("background-image", 'url("./img/unableToFind.png")')
+    movies_container.style.setProperty("background-image", 'url("../img/unableToFind.png")')
 }
 
 movies_container.addEventListener('click', (event) => {
