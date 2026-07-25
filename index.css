@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Jost", sans-serif;
+}
+
+.top {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 200px;
+    background-image: url("./img/home-background.png");
+    background-color: #0E0E0E;
+    background-position: fill;
+    background-repeat: no-repeat;
+    color: white;
+    font-family: "Jost", sans-serif;
+}
+
+.top>h1 {
+    font-size: 40px;
+}
+
+.top>a {
+    text-decoration: none;
+    color: white;
+}
+
+.input {
+    display: flex;
+    justify-content: center;
+    margin-top: -20px;
+}
+
+.input>input {
+    width: 300px;
+    padding: 10px 10px 10px 40px;
+    border-radius: 6px 0px 0px 6px;
+    border: 1px solid gray;
+    font-family: "Jost", sans-serif;
+}
+
+.input>input:focus-visible {
+    outline: none;
+}
+
+.input>svg {
+    position: absolute;
+    left: 13%;
+    top: 32.5%;
+}
+
+.input>button {
+    padding: 10px 30px;
+    border-radius: 0px 6px 6px 0px;
+    border: 1px solid gray;
+    border-left: none;
+    font-family: "Jost", sans-serif;
+}
+
+.input>button:active,
+.input>button:focus {
+    outline: none;
+}
+
+.movies {
+    height: 500px;
+    background-image: url("./img/start-exploring.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.watchlist-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 500px;
+}
+
+.watchlist-container>p {
+    color: #DFDDDD;
+    font-size: larger;
+    font-weight: 500;
+}
+
+.watchlist-container>a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    display: flex;
+    font-weight: 600;
+    gap: 5px;
+    align-items: center;
+}
+
+.movies {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    gap: 20px;
+}
+
+.movie {
+    display: flex;
+    width: 482px;
+    gap: 30px;
+    height: 160px;
+}
+
+.movie>img {
+    width: 99px;
+    height: 147px;
+}
+
+.article {
+    display: flex;
+    flex-direction: column;
+    height: 147px;
+    justify-content: space-between;
+}
+
+.title-rating {
+    align-items: center;
+    display: flex;
+    gap: 10px;
+}
+
+.rating {
+    display: flex;
+    gap: 2px;
+    align-items: center;
+}
+
+.time-genre-watchlist {
+    display: flex;
+    align-items: center;
+    height: 10px;
+    justify-content: space-between;
+    font-size: smaller;
+}
+
+.runtime {
+    width: 20px;
+}
+
+.plot {
+    text-align: justify;
+    font-size: 14px;
+    color: #6B7280;
+}
+
+.watchlist {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-weight: 600;
+    color: black;
+    height: 20px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 425px) {
+    .top>h1 {
+        font-size: 20px;
+    }
+
+    .input>svg {
+        position: absolute;
+        left: 5%;
+        top: 23%;
+    }
+
+    .watchlist-container {
+        justify-content: center;
+    }
+
+    .movie {
+        align-items: center;
+        width: 370px;
+        gap: 20px;
+        height: 180px;
+    }
+
+    .article {
+        height: 180px;
+        gap: 20px;
+    }
+
+    .time-genre-watchlist {
+        justify-content: space-between;
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .top>h1 {
+        font-size: 15px;
+    }
+
+    .input>svg {
+        position: absolute;
+        left: 9%;
+        top: 23%;
+    }
+
+    .watchlist-container {
+        justify-content: center;
+    }
+
+    .movie {
+        align-items: center;
+        width: 325px;
+        gap: 20px;
+        height: 190px;
+    }
+
+    .article {
+        height: 190px;
+        gap: 25px;
+    }
+
+    .time-genre-watchlist {
+        justify-content: space-between;
+        gap: 10px;
+    }
+    .plot{
+        height: 140px;
+        overflow: hidden;
+    }
+    .input > input{
+        width: 220px;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .movie{
+        width: 240px;
+    }
+    .input > input{
+        width: 200px;
+    }
+    .title-rating{
+        gap: 5px;
+    }
+}
